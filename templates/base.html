@@ -31,7 +31,11 @@
      }
     </style>
     <link href="{{ SITEURL }}/theme/css/bootstrap-responsive.dark.css" rel="stylesheet">
+    {% if THEME_BOOTSTRAP2_DARK_HIDE_FONT_AWESOME %}
+        <link href="{{ SITEURL }}/theme/css/font-awesome-fake.css" rel="stylesheet">
+    {% else %}
         <link href="{{ SITEURL }}/theme/css/font-awesome.css" rel="stylesheet">
+    {% endif %}
 
     <link href="{{ SITEURL }}/theme/css/pygments.css" rel="stylesheet">
 
