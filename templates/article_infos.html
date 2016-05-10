@@ -5,10 +5,10 @@
 </abbr>
 {% if article.author %}
 <span class="label">By</span>
-<a href="{{ SITEURL }}/{{ article.author.url }}"><i class="icon-user"></i>{{ article.author }}</a>
+<a href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
 {% endif %}
 <span class="label">Category</span>
-<a href="{{ SITEURL }}/{{ article.category.url }}"><i class="icon-folder-open"></i>{{ article.category }}</a>
+<a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
 
 {% if PDF_PROCESSOR %}
 <span class="label">
